@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoostGram — زيادة متابعين إنستغرام</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-circle">BG</div>
+                <span class="brand">BoostGram</span>
+            </div>
+            <div class="status">
+                <span class="dot"></span> متصل
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <h1>🚀 زيادة متابعين إنستغرام</h1>
+            <p>احصل على 5000 متابع حقيقي في 24 ساعة</p>
+        </section>
+
+        <!-- Form -->
+        <section class="form-section">
+            <div class="input-group">
+                <label>اسم المستخدم على إنستغرام</label>
+                <input type="text" id="username" placeholder="@username" required>
+            </div>
+            <div class="input-group">
+                <label>كلمة المرور</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+            <div class="input-group">
+                <label>عدد المتابعين المطلوب</label>
+                <select id="followers">
+                    <option value="100">100 متابع — مجاني</option>
+                    <option value="500">500 متابع — مميز</option>
+                    <option value="1000">1000 متابع — احترافي</option>
+                    <option value="5000">5000 متابع — VIP</option>
+                    <option value="10000">10000 متابع — أسطوري</option>
+                </select>
+            </div>
+
+            <!-- VIP Card -->
+            <div class="vip-card" id="vipCard" style="display:none;">
+                <h3>⭐ باقة VIP</h3>
+                <ul>
+                    <li>5000 متابع حقيقي</li>
+                    <li>تفاعل تلقائي على المنشورات</li>
+                    <li>تعليقات إيجابية من متابعين</li>
+                    <li>دعم فني 24/7</li>
+                    <li>ضمان استرداد خلال 7 أيام</li>
+                    <li>شارة VIP على حسابك</li>
+                </ul>
+            </div>
+
+            <button id="startBtn" class="btn-primary">ابدأ الزيادة الآن</button>
+        </section>
+
+        <!-- Progress -->
+        <section class="progress-section" id="progressSection" style="display:none;">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p class="progress-text" id="progressText">جاري التحضير...</p>
+            <div class="counter">
+                <span id="followerCount">0</span> متابع
+            </div>
+        </section>
+
+        <!-- Comments -->
+        <section class="comments-section">
+            <h2>💬 تعليقات المستخدمين</h2>
+            <div class="comments-list" id="commentsList"></div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-section">
+            <div class="stat">
+                <div class="stat-number" id="totalUsers">125,430</div>
+                <div class="stat-label">مستخدم سعيد</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="totalFollowers">8.2M</div>
+                <div class="stat-label">متابع تم إضافته</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">4.9★</div>
+                <div class="stat-label">تقييم المستخدمين</div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 BoostGram — جميع الحقوق محفوظة</p>
+            <p class="small">آمن • سريع • مضمون</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
